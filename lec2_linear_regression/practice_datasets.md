@@ -14,7 +14,7 @@ Some transformations to prevent you from getting stuck:
 
 ```bash
 sed -i 's/ \+/\t/g' auto-mpg.data
-sed -i 's/?/0.0/g' auto-mpg.data
+sed -i '/?/d' auto-mpg.data
 ```
 and when reading data, you can add headers as follows:
 
